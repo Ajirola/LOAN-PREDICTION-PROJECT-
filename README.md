@@ -98,3 +98,23 @@ The dataset used is a loan application dataset containing **45,000 records** and
 
 ## 📊 Visual insights 
 ![Screenshot](Screenshot_20250830-182947.jpg)
+
+**Loan Status Distribution**  
+  - Majority of applicants (78%) had their loans **not approved**.  
+  - Only about 22% were **approved**, showing that lenders are more conservative in approvals.
+    
+![Screenshot](Screenshot_20250830-183043.jpg)
+**Loan Intent**  
+  - Most loan applications were for **medical, education, and personal use**.  
+  - This shows that many applicants borrow for essential needs (health, school) and personal expenses.  
+
+![Screenshot](Screenshot_20250830-183059.jpg)
+**Education Level**  
+  - Majority of applicants had **Bachelor’s education**.  
+  - Applicants with **Master’s and Doctorate degrees** were fewer but still significant.
+    
+
+![Screenshot](Screenshot_20250830-183113.jpg)
+
+- Most applicants were **renters**, followed by those with a **mortgage**.  
+  - Few applicants fully owned their homes, showing higher dependency on borrowed housing.  
