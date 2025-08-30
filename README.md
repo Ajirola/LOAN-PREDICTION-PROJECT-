@@ -178,6 +178,26 @@ From the VIF analysis:
 - After dropping `person_emp_exp`, **all remaining variables have VIF < 5**, which is within the safe range.  
 - This reduces redundancy and ensures that predictors provide **unique information** to the logistic regression model.
 
+## 📌 Logistic Regression Coefficients & Interpretation
 
+| Feature                        | Coefficient | Odds Ratio | Interpretation |
+|--------------------------------|-------------|------------|----------------|
+| person_age                     | 0.0761      | 1.0791     | ✅ Slight increase in age increases approval odds (not a strong effect). |
+| person_gender                  | 0.0081      | 1.0082     | ⚪ Gender has almost no effect on loan approval. |
+| person_education               | 0.0014      | 1.0014     | ⚪ Education level does not strongly influence approval. |
+| person_income                  | 0.0200      | 1.0202     | ✅ Higher income slightly increases chances of approval. |
+| person_home_ownership          | 0.3339      | 1.3964     | ✅ Applicants who own/mortgage homes are ~1.4× more likely to be approved. |
+| loan_amnt                      | -0.5451     | 0.5798     | ❌ Higher loan amounts reduce approval odds. |
+| loan_intent                    | -0.2674     | 0.7653     | ❌ Certain loan purposes are less likely to be approved. |
+| loan_int_rate                  | 0.9887      | 2.6878     | ✅ Higher interest rates strongly increase approval likelihood (banks approve but charge more risk premium). |
+| loan_percent_income            | 1.2783      | 3.5905     | ✅ Applicants with smaller loan-to-income ratios are **3.6× more likely** to be approved. |
+| cb_person_cred_hist_length     | -0.0388     | 0.9619     | ❌ Longer credit history slightly reduces approval odds (not a big effect). |
+| credit_score                   | -0.4581     | 0.6325     | ❌ Lower credit scores reduce approval likelihood. |
+| previous_loan_defaults_on_file | -4.4903     | 0.0112     | 🚨 Past loan defaults **drastically reduce** approval chances. |
+
+### 🔎 Key Insights
+- **Strong Positive Predictors**: Loan-to-Income Ratio, Loan Interest Rate, Home Ownership, Income.  
+- **Strong Negative Predictors**: Loan Amount, Credit Score, Previous Defaults.  
+- **Minimal/No Impact**: Gender, Education.
 
 
