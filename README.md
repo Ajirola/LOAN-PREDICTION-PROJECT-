@@ -264,9 +264,21 @@ To ensure the model’s performance was not due to overfitting, **5-fold cross-v
 - Applicants with borderline cases (e.g., average credit score but no past defaults) should undergo **manual review** instead of outright rejection.
 
 ## 🙏 Acknowledgement
-- Thanks to **Kaggle/open-source datasets** for providing data.
+
+## 🙏 Acknowledgement
+
+This project is made possible using publicly available loan data from **Kaggle**.  
+Special thanks to the dataset contributors for sharing valuable financial data that supports learning and research in credit risk assessment and predictive modeling.  
+
+This project is developed for **educational and portfolio purposes only**.
 
 
-## 📬 Contact
-👤 **Author:** Ajirola Amudat  
-💼 **LinkedIn:** [Insert LinkedIn profile link]  
+## 📞 Contact
+
+Created by **Ajirola Amudat**  
+🔗 [LinkedIn](https://www.linkedin.com/in/ajirolaamudat)
+
+📫 For questions or collaborations: [Send a message](https://www.linkedin.com/in/ajirolaamudat)
+
+  
+![Screenshot](Screenshot_20250311-144911.jpg)
