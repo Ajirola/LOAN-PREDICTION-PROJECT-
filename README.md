@@ -252,31 +252,21 @@ To ensure the model’s performance was not due to overfitting, **5-fold cross-v
 ### 📌 Mean CV Accuracy
 - **0.8902 (≈ 89%)**
 
----
-
-### 🔎 Interpretation
-- The cross-validation accuracies are **very consistent** (all around 88–90%).  
-- The small variation across folds shows the model is **stable and generalizes well**.  
-- Confirms that the Logistic Regression model is **reliable and not overfitted**. is **more accurate at predicting rejections (Class 0)** than approvals (Class 1).  
-- Precision and Recall for loan approvals are slightly lower (0.76 and 0.74), meaning some approved loans are still being misclassified.  
-- The high ROC-AUC (0.95) confirms strong performance in distinguishing between approved and rejected cases.
-
-
-## 🔄 Cross-Validation Results
-
-To ensure the model’s performance was not due to overfitting, **5-fold cross-validation** was applied.  
-
-### 📊 Fold Accuracies
-- Fold 1: **0.8842**  
-- Fold 2: **0.8946**  
-- Fold 3: **0.8790**  
-- Fold 4: **0.8937**  
-- Fold 5: **0.8993**  
-
-### 📌 Mean CV Accuracy
-- **0.8902 (≈ 89%)**
-
 ### 🔎 Interpretation
 - The cross-validation accuracies are **very consistent** (all around 88–90%).  
 - The small variation across folds shows the model is **stable and generalizes well**.  
 - Confirms that the Logistic Regression model is **reliable and not overfitted**.
+
+## ✍️ Recommendation
+- The model shows strong performance (Accuracy = 89%, ROC-AUC = 0.95) and can be reliably used as a **first-level loan screening tool**.  
+- Lenders can use it to **automatically flag high-risk applicants**, saving time and reducing financial risk.  
+- Strong predictors such as **credit score, loan-to-income ratio, and past defaults** should be given higher weight in decision-making.  
+- Applicants with borderline cases (e.g., average credit score but no past defaults) should undergo **manual review** instead of outright rejection.
+
+## 🙏 Acknowledgement
+- Thanks to **Kaggle/open-source datasets** for providing data.
+
+
+## 📬 Contact
+👤 **Author:** Ajirola Amudat  
+💼 **LinkedIn:** [Insert LinkedIn profile link]  
