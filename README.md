@@ -200,4 +200,83 @@ From the VIF analysis:
 - **Strong Negative Predictors**: Loan Amount, Credit Score, Previous Defaults.  
 - **Minimal/No Impact**: Gender, Education.
 
+## ✅ Model Evaluation
 
+### 📊 Accuracy
+- Overall Accuracy: **0.89 (89%)**
+
+
+### 📑 Classification Report
+
+| Class (Loan Status) | Precision | Recall | F1-Score | Support |
+|----------------------|-----------|--------|----------|---------|
+| 0 (Not Approved)    | 0.92      | 0.93   | 0.93     | 10,493  |
+| 1 (Approved)        | 0.76      | 0.74   | 0.75     | 3,007   |
+| **Overall / Avg**   | **0.89**  | **0.89** | **0.89** | 13,500  |
+
+
+### 🔲 Confusion Matrix
+
+|                  | Predicted: 0 | Predicted: 1 |
+|------------------|--------------|--------------|
+| **Actual: 0**    | 9803         | 690          |
+| **Actual: 1**    | 795          | 2212         |
+
+- **True Negatives (9803):** Correctly predicted loan rejections.  
+- **True Positives (2212):** Correctly predicted loan approvals.  
+- **False Positives (690):** Predicted approved, but actually rejected.  
+- **False Negatives (795):** Predicted rejected, but actually approved.  
+
+### 📈 ROC-AUC Score
+- **ROC-AUC = 0.95** → The model has excellent discrimination ability between approved and not approved loans.
+
+
+### 🔎 Interpretation
+- The model performs **very well overall (89% accuracy)**.  
+- It is **more accurate at predicting rejections (Class 0)** than approvals (Class 1).  
+- Precision and Recall for loan approvals are slightly lower (0.76 and 0.74), meaning some approved loans are still being misclassified.  
+- The high ROC-AUC (0.95) confirms strong performance in distinguishing between approved and rejected cases.
+
+
+## 🔄 Cross-Validation Results
+
+To ensure the model’s performance was not due to overfitting, **5-fold cross-validation** was applied.  
+
+### 📊 Fold Accuracies
+- Fold 1: **0.8842**  
+- Fold 2: **0.8946**  
+- Fold 3: **0.8790**  
+- Fold 4: **0.8937**  
+- Fold 5: **0.8993**  
+
+### 📌 Mean CV Accuracy
+- **0.8902 (≈ 89%)**
+
+---
+
+### 🔎 Interpretation
+- The cross-validation accuracies are **very consistent** (all around 88–90%).  
+- The small variation across folds shows the model is **stable and generalizes well**.  
+- Confirms that the Logistic Regression model is **reliable and not overfitted**. is **more accurate at predicting rejections (Class 0)** than approvals (Class 1).  
+- Precision and Recall for loan approvals are slightly lower (0.76 and 0.74), meaning some approved loans are still being misclassified.  
+- The high ROC-AUC (0.95) confirms strong performance in distinguishing between approved and rejected cases.
+
+
+## 🔄 Cross-Validation Results
+
+To ensure the model’s performance was not due to overfitting, **5-fold cross-validation** was applied.  
+
+### 📊 Fold Accuracies
+- Fold 1: **0.8842**  
+- Fold 2: **0.8946**  
+- Fold 3: **0.8790**  
+- Fold 4: **0.8937**  
+- Fold 5: **0.8993**  
+
+### 📌 Mean CV Accuracy
+- **0.8902 (≈ 89%)**
+
+### 🔎 Interpretation
+- The cross-validation accuracies are **very consistent** (all around 88–90%).  
+- The small variation across folds shows the model is **stable and generalizes well**.  
+- Confirms that the Logistic Regression model is **reliable and not overfitted**.
