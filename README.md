@@ -37,7 +37,7 @@ To develop a **predictive model** that accurately determines **loan approval** b
 
 
 ## 📂 Data Source
-The dataset was obtained from kaggle website | [LINK](#https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data)
+The dataset was obtained from kaggle website, here's the link to the dataset: https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data)
 
 ## 📊 Dataset Description
 The dataset used is a loan application dataset containing **45,000 records** and **14 features**.  
@@ -263,7 +263,6 @@ To ensure the model’s performance was not due to overfitting, **5-fold cross-v
 - Strong predictors such as **credit score, loan-to-income ratio, and past defaults** should be given higher weight in decision-making.  
 - Applicants with borderline cases (e.g., average credit score but no past defaults) should undergo **manual review** instead of outright rejection.
 
-## 🙏 Acknowledgement
 
 ## 🙏 Acknowledgement
 
