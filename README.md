@@ -104,11 +104,13 @@ The dataset used is a loan application dataset containing **45,000 records** and
   - Only about 22% were **approved**, showing that lenders are more conservative in approvals.
     
 ![Screenshot](Screenshot_20250830-183043.jpg)
+
 **Loan Intent**  
   - Most loan applications were for **medical, education, and personal use**.  
   - This shows that many applicants borrow for essential needs (health, school) and personal expenses.  
 
 ![Screenshot](Screenshot_20250830-183059.jpg)
+
 **Education Level**  
   - Majority of applicants had **Bachelor’s education**.  
   - Applicants with **Master’s and Doctorate degrees** were fewer but still significant.
@@ -116,5 +118,38 @@ The dataset used is a loan application dataset containing **45,000 records** and
 
 ![Screenshot](Screenshot_20250830-183113.jpg)
 
+**Home Ownership**  
 - Most applicants were **renters**, followed by those with a **mortgage**.  
-  - Few applicants fully owned their homes, showing higher dependency on borrowed housing.  
+- Few applicants fully owned their homes, showing higher dependency on borrowed housing.
+
+## 📉 Multicollinearity Check (VIF)
+
+Variance Inflation Factor (VIF) was calculated to detect multicollinearity among predictors:
+
+| Feature                        | VIF       | Interpretation |
+|--------------------------------|-----------|----------------|
+| const                          | 379.91    | ❌ Very high (ignored, constant term) |
+| person_age                     | 14.12     | ❌ High multicollinearity |
+| person_gender                  | 1.00      | ✅ No multicollinearity |
+| person_education               | 1.00      | ✅ No multicollinearity |
+| person_income                  | 1.44      | ✅ Acceptable |
+| person_emp_exp                 | 11.27     | ❌ High multicollinearity |
+| person_home_ownership          | 1.16      | ✅ Acceptable |
+| loan_amnt                      | 2.20      | ✅ Acceptable |
+| loan_intent                    | 1.00      | ✅ No multicollinearity |
+| loan_int_rate                  | 1.08      | ✅ Acceptable |
+| loan_percent_income            | 2.21      | ✅ Acceptable |
+| cb_person_cred_hist_length     | 3.93      | ✅ Moderate, acceptable |
+| credit_score                   | 1.07      | ✅ Acceptable |
+| previous_loan_defaults_on_file | 1.13      | ✅ Acceptable |
+
+### 🔎 Interpretation
+- **Threshold:** A VIF > 10 indicates **high multicollinearity**.  
+- `person_age (14.12)` and `person_emp_exp (11.27)` show **serious multicollinearity** ❌.  
+- Most other predictors have **VIF < 5**, meaning they are acceptable ✅.  
+
+
+
+
+
+
