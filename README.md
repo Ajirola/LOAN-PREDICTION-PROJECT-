@@ -23,7 +23,7 @@
 - [Contact](#contact)
 
   ## 📌 Project Overview
-This project predicts **whether a loan application will be approved or not** based on applicant details such as age, income, employment, credit history, and loan details.  
+A machine learning project to predicts **whether a loan application will be approved or not** based on applicant details such as age, income, employment, credit history, and loan details.  
 It uses **Logistic Regression**, a statistical model, to make predictions.
 
 ## 📝 Description
@@ -34,11 +34,7 @@ This project provides a **data-driven approach** to help lenders make informed d
 Loan default is one of the biggest challenges faced by financial institutions. Traditional manual methods of assessing applications are time-consuming and may overlook important patterns in customer data. This leads to high rejection rates, approval of risky applicants, and loss of potential revenue. To address this, a data-driven approach is required to analyze customer attributes and build a predictive system that can improve decision-making, reduce risks, and ensure fair loan approvals.
 
 ## 🎯 Project Objective
-1. Clean and explore the loan dataset.  
-2. Identify key features affecting loan approval.  
-3. Build a logistic regression model to predict loan approval.  
-4. Evaluate model performance.  
-5. Provide recommendations for decision-making.
+To develop a predictive model that accurately determines loan approval based on applicant attributes.
 
 
 ## 📂 Data Source
@@ -46,9 +42,33 @@ The dataset was obtained from kaggle website | LINK
 
 
 ## 📊 Dataset Description
-- **Rows:** 45,000 applicants  
-- **Columns:** 14 variables (age, gender, income, loan amount, credit score, etc.)  
-- **Target Variable:** `loan_status` (0 = Not Approved, 1 = Approved)  
+The dataset used is a loan application dataset containing **45,000 records** and **14 features**.  
+
+- **Target variable:** loan_status (0 = Not Approved, 1 = Approved)
+
+- **Independent variables:** applicant’s demographics, loan details, and credit history.
+
+| Feature | Description |
+|---------|-------------|
+| person_age | Age of applicant |
+| person_gender | Gender of applicant |
+| person_education | Education level |
+| person_income | Annual income |
+| person_emp_exp | Employment experience (years) |
+| person_home_ownership | Home ownership status |
+| loan_amnt | Loan amount requested |
+| loan_intent | Loan purpose (Education, Medical, etc.) |
+| loan_int_rate | Loan interest rate (%) |
+| loan_percent_income | Loan-to-income ratio |
+| cb_person_cred_hist_length | Credit history length (years) |
+| credit_score | Credit score of applicant |
+| previous_loan_defaults_on_file | Past default record (Yes/No) |
+| loan_status | Target variable (0 = Not Approved, 1 = Approved) |
+
 
 ## 🛠 Tools
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Statsmodels)  
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn)
+
+**Scikit-learn** (Logistic Regression, preprocessing, evaluation)
+
+**Statsmodels** (VIF for multicollinearity checks)
