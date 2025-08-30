@@ -38,8 +38,7 @@ To develop a predictive model that accurately determines loan approval based on 
 
 
 ## 📂 Data Source
-The dataset was obtained from kaggle website | LINK 
-
+The dataset was obtained from kaggle website | [LINK](#https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data)
 
 ## 📊 Dataset Description
 The dataset used is a loan application dataset containing **45,000 records** and **14 features**.  
