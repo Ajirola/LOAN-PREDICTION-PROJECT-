@@ -89,9 +89,12 @@ The dataset used is a loan application dataset containing **45,000 records** and
 
 - Encoded categorical variables (gender, education, loan intent, etc.) into numbers.
 
-## 📊 Summary Statistics Interpretation
+## 📈 Summary Statistics Interpretation
 - **Average age = 28 years** → mostly young applicants.  
 - **Average income = 80,000**.  
 - **Loan amounts ranged from 500 – 35,000.**  
 - **Credit scores mostly between 600 – 850.**  
 - About **22% of applicants were approved** (`loan_status = 1`), while **78% were rejected** (`loan_status = 0`).
+
+## 📊 Visual insights 
+![Screenshot](Screenshot_20250830-182947.jpg)
