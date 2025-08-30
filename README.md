@@ -5,7 +5,6 @@
 - [Description](#description)  
 - [Problem Statement](#problem-statement)  
 - [Project Objective](#project-objective)  
-- [Key Areas Analyzed](#key-areas-analyzed)  
 - [Data Source](#data-source)  
 - [Dataset Description](#dataset-description)  
 - [Tools](#tools)  
@@ -68,6 +67,21 @@ The dataset used is a loan application dataset containing **45,000 records** and
 ## 🛠 Tools
 - **Python** (Pandas, NumPy, Matplotlib, Seaborn)
 
-**Scikit-learn** (Logistic Regression, preprocessing, evaluation)
+- **Scikit-learn** (Logistic Regression, preprocessing, evaluation)
 
-**Statsmodels** (VIF for multicollinearity checks)
+- **Statsmodels** (VIF for multicollinearity checks)
+
+## 🔍 Methodology
+1. Data Cleaning
+2. Exploratory Data Analysis (EDA)  
+3. Multicollinearity check (VIF)  
+4. Logistic Regression model building  
+5. Model Evaluation → Accuracy, Confusion Matrix, ROC-AUC, Cross-Validation
+
+## 🧹 Data cleaning 
+- Checked for missing values (none found).
+
+- Checked for duplicates (none found).
+
+- Encoded categorical variables using LabelEncoder.
+
