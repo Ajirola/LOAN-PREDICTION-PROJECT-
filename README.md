@@ -148,7 +148,35 @@ Variance Inflation Factor (VIF) was calculated to detect multicollinearity among
 - `person_age (14.12)` and `person_emp_exp (11.27)` show **serious multicollinearity** ❌.  
 - Most other predictors have **VIF < 5**, meaning they are acceptable ✅.  
 
+## 🛠 Handling Multicollinearity
 
+From the VIF analysis:
+
+- `person_age` (VIF = 14.12) and `person_emp_exp` (VIF = 11.27) showed **high multicollinearity** ❌.  
+- Logistic regression significance testing showed `person_emp_exp` was **not statistically significant** (high p-value).  
+- To improve model stability, we **dropped `person_emp_exp`** from the dataset.  
+
+### ✅ Updated VIF After Dropping `person_emp_exp`
+
+| Feature                        | VIF   | Interpretation |
+|--------------------------------|-------|----------------|
+| const                          | 226.95 | ❌ Very high (ignored, constant term) |
+| person_age                     | 4.05   | ✅ Acceptable |
+| person_gender                  | 1.00   | ✅ No multicollinearity |
+| person_education               | 1.00   | ✅ No multicollinearity |
+| person_income                  | 1.44   | ✅ Acceptable |
+| person_home_ownership          | 1.16   | ✅ Acceptable |
+| loan_amnt                      | 2.19   | ✅ Acceptable |
+| loan_intent                    | 1.00   | ✅ No multicollinearity |
+| loan_int_rate                  | 1.08   | ✅ Acceptable |
+| loan_percent_income            | 2.21   | ✅ Acceptable |
+| cb_person_cred_hist_length     | 3.93   | ✅ Moderate, acceptable |
+| credit_score                   | 1.07   | ✅ Acceptable |
+| previous_loan_defaults_on_file | 1.13   | ✅ Acceptable |
+
+### 🔎 Interpretation
+- After dropping `person_emp_exp`, **all remaining variables have VIF < 5**, which is within the safe range.  
+- This reduces redundancy and ensures that predictors provide **unique information** to the logistic regression model.
 
 
 
