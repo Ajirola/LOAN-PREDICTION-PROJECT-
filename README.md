@@ -33,7 +33,7 @@ This project provides a **data-driven approach** to help lenders make informed d
 Loan default is one of the biggest challenges faced by financial institutions. Traditional manual methods of assessing applications are time-consuming and may overlook important patterns in customer data. This leads to high rejection rates, approval of risky applicants, and loss of potential revenue. To address this, a data-driven approach is required to analyze customer attributes and build a predictive system that can improve decision-making, reduce risks, and ensure fair loan approvals.
 
 ## 🎯 Project Objective
-To develop a predictive model that accurately determines loan approval based on applicant attributes.
+To develop a **predictive model** that accurately determines **loan approval** based on applicant attributes.
 
 
 ## 📂 Data Source
@@ -72,16 +72,31 @@ The dataset used is a loan application dataset containing **45,000 records** and
 - **Statsmodels** (VIF for multicollinearity checks)
 
 ## 🔍 Methodology
-1. Data Cleaning
-2. Exploratory Data Analysis (EDA)  
-3. Multicollinearity check (VIF)  
-4. Logistic Regression model building  
-5. Model Evaluation → Accuracy, Confusion Matrix, ROC-AUC, Cross-Validation
+1. Data Cleaning – Handle missing values, duplicates, inconsistent data.
+
+2. Exploratory Data Analysis (EDA) – Understand data patterns using statistics and visualizations.
+
+3. Multicollinearity Check – Ensure predictors are not too closely related.
+
+4. Model Building – Train a Logistic Regression model.
+
+5. Model Evaluation – Check accuracy, precision, recall, ROC-AUC.
 
 ## 🧹 Data cleaning 
-- Checked for missing values (none found).
+- No missing values found.
 
-- Checked for duplicates (none found).
+- No duplicate records.
 
-- Encoded categorical variables using LabelEncoder.
+- Encoded categorical variables (gender, education, loan intent, etc.) into numbers.
 
+## 📊 Summary Statistics Interpretation
+
+-Average age = 27.7 years (mostly young applicants).
+
+Average income = $80,000 (but some extreme outliers exist).
+
+Loan amounts ranged from $500 – $35,000.
+
+Credit scores mostly between 600 – 850.
+
+22% of applicants were approved (loan_status=1).
