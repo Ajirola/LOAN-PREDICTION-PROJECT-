@@ -72,15 +72,15 @@ The dataset used is a loan application dataset containing **45,000 records** and
 - **Statsmodels** (VIF for multicollinearity checks)
 
 ## 🔍 Methodology
-1. Data Cleaning – Handle missing values, duplicates, inconsistent data.
+1. Data Cleaning: Handle missing values, duplicates, inconsistent data.
 
-2. Exploratory Data Analysis (EDA) – Understand data patterns using statistics and visualizations.
+2. Exploratory Data Analysis (EDA): Understand data patterns using statistics and visualizations.
 
-3. Multicollinearity Check – Ensure predictors are not too closely related.
+3. Multicollinearity Check: Ensure predictors are not too closely related.
 
-4. Model Building – Train a Logistic Regression model.
+4. Model Building: Train a Logistic Regression model.
 
-5. Model Evaluation – Check accuracy, precision, recall, ROC-AUC.
+5. Model Evaluation: Check accuracy, precision, recall, ROC-AUC.
 
 ## 🧹 Data cleaning 
 - No missing values found.
@@ -214,7 +214,7 @@ From the VIF analysis:
 
  **In simple words:**  
 Banks approve applicants who **borrow within their means, have stable housing, and no history of default**.  
-They reject applicants with **large loan requests, poor credit, or past defaults** — regardless of age, gender, or education.
+They reject applicants with **large loan requests, poor credit, or past defaults** regardless of age, gender, or education.
 
 ## ✅ Model Evaluation
 
