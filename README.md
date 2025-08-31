@@ -37,7 +37,7 @@ To develop a **predictive model** that accurately determines **loan approval** b
 
 
 ## 📂 Data Source
-The dataset was obtained from kaggle website, here's the link to the dataset: https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data)
+The dataset was obtained from kaggle website, here's the link to the dataset: https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
 
 ## 📊 Dataset Description
 The dataset used is a loan application dataset containing **45,000 records** and **14 features**.  
@@ -195,10 +195,26 @@ From the VIF analysis:
 | credit_score                   | -0.4581     | 0.6325     | ❌ Lower credit scores reduce approval likelihood. |
 | previous_loan_defaults_on_file | -4.4903     | 0.0112     | 🚨 Past loan defaults **drastically reduce** approval chances. |
 
-### 🔎 Key Insights
-- **Strong Positive Predictors**: Loan-to-Income Ratio, Loan Interest Rate, Home Ownership, Income.  
-- **Strong Negative Predictors**: Loan Amount, Credit Score, Previous Defaults.  
-- **Minimal/No Impact**: Gender, Education.
+## 📌 Overall Insights
+
+### ✅ Most Important Positive Predictors
+- **Loan-to-Income Ratio** (OR = 3.59)  
+- **Loan Interest Rate** (OR = 2.69)  
+- **Home Ownership** (OR = 1.40)  
+
+### ❌ Most Important Negative Predictors
+- **Past Loan Defaults** (OR = 0.01 🚨)  
+- **Loan Amount** (OR = 0.58)  
+- **Low Credit Score** (OR = 0.63)  
+
+### ⚪ Weak/No Impact Predictors
+- **Gender**  
+- **Education**  
+- **Age** (small effects only)  
+
+ **In simple words:**  
+Banks approve applicants who **borrow within their means, have stable housing, and no history of default**.  
+They reject applicants with **large loan requests, poor credit, or past defaults** — regardless of age, gender, or education.
 
 ## ✅ Model Evaluation
 
