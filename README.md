@@ -290,7 +290,7 @@ This project is developed for **educational and portfolio purposes only**.
 
 ## 📞 Contact
 
-Created by **Ajirola Amudat**  
+👤 Created by **Ajirola Amudat** | Data Science & Analytics Enthusiast
 🔗 [LinkedIn](https://www.linkedin.com/in/ajirolaamudat)
 
 📫 For questions or collaborations: [Send a message](https://www.linkedin.com/in/ajirolaamudat)
